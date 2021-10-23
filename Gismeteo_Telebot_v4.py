@@ -3,7 +3,7 @@ import emoji
 import requests, datetime
 
 
-bot = telebot.TeleBot("1652337761:AAGJ0InzXjooH3Sm7yFnIMW5-6tOSlfxQXY", parse_mode=None)
+bot = telebot.TeleBot("secret", parse_mode=None)
 #there we initialize dictionaries for each print
 pressure_for_print = {}
 humidity_for_print = {}
@@ -41,7 +41,7 @@ def thread_function(city, daysp):
         temperature, wind_speed_min, pressure, humidity, geoactivity = ['C'], ['m/s'], ['hg_mm'], ['%'], ['points']
 
 
-        header = {'X-Gismeteo-Token' : '60abcc10912897.62122015'}
+        header = {'X-Gismeteo-Token' : 'secret'}
                 
         
         #language
